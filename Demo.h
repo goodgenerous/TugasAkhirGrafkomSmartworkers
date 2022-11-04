@@ -13,7 +13,7 @@ public:
 	Demo();
 	~Demo();
 private:
-	GLuint shaderProgram, VBO, VAO, EBO, texture, VBO2, VAO2, EBO2, texture2;
+	GLuint shaderProgram, VBO, VAO, EBO, texture, VBO2, VAO2, EBO2, texture2, VBO3, VAO3, EBO3, texture3, VBO4, VAO4, EBO4, texture4;
 	float viewCamX, viewCamY, viewCamZ, upCamX, upCamY, upCamZ, posCamX, posCamY, posCamZ, CAMERA_SPEED, fovy;
 	float angle = 0;
 	float position = -1;
@@ -26,6 +26,14 @@ private:
 	virtual void ProcessInput(GLFWwindow* window);
 	void BuildColoredPlane();
 	void BuildRoad();
+	void BuildLeftTrotoar();
+	void BuildRightTrotoar();
+	void BuildLeftFence();
+	void BuildRightFence();
+	void DrawLeftFence();
+	void DrawRightFence();
+	void DrawLeftTrotoar();
+	void DrawRightTrotoar();
 	void DrawColoredPlane();
 	void DrawRoad();
 	void MoveCamera(float speed);
